@@ -1,0 +1,2 @@
+zk=com.kitty.rpc.core.discovery.zk.ZookeeperServiceDiscovery
+nacos=com.kitty.rpc.core.discovery.nacos.NacosServiceDiscovery

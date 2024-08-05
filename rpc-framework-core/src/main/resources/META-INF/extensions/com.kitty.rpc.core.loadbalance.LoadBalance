@@ -1,0 +1,3 @@
+random=com.kitty.rpc.core.loadbalance.impl.RandomLoadBalance
+roundRobin=com.kitty.rpc.core.loadbalance.impl.RoundRobinLoadBalance
+consistentHash=com.kitty.rpc.core.loadbalance.impl.ConsistentHashLoadBalance

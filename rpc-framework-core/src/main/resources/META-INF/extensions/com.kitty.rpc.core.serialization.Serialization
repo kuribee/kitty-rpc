@@ -1,0 +1,5 @@
+protostuff=com.kitty.rpc.core.serialization.protostuff.ProtostuffSerialization
+kryo=com.kitty.rpc.core.serialization.kryo.KryoSerialization
+json=com.kitty.rpc.core.serialization.json.JsonSerialization
+jdk=com.kitty.rpc.core.serialization.jdk.JdkSerialization
+hessian=com.kitty.rpc.core.serialization.hessian.HessianSerialization

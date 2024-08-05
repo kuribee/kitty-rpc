@@ -1,0 +1,2 @@
+zk=com.kitty.rpc.core.registry.zk.ZookeeperServiceRegistry
+nacos=com.kitty.rpc.core.registry.nacos.NacosServiceRegistry
