@@ -12,15 +12,15 @@ public class P2 {
     }
     //字符串重新排序，可以将多个字母异位词变成一个
     public static List<List<String>> groupAnagrams(String[] strs) {
-        HashMap<String,List<String>> hashMap=new HashMap<>();
+        HashMap<String ,List<String>> map=new HashMap<>();
         for(String str:strs){
             char[] charArray = str.toCharArray();
             Arrays.sort(charArray);
             String key = new String(charArray);
-            List<String> list = hashMap.getOrDefault(key, new ArrayList<String>());
+            List<String> list = map.getOrDefault(key, new ArrayList<String>());
             list.add(str);
-            hashMap.put(key,list);
+            map.put(key,list);
         }
-        return new ArrayList<List<String>>(hashMap.values());
+        return new ArrayList<>(map.values());
     }
 }

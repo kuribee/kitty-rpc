@@ -6,22 +6,22 @@ public class P3 {
     //放入集合，从数组中找出一个开头的数，开头的数就是其-1(减去-1)不在集合中
     //从开头的数开始计数
     public int longestConsecutive(int[] nums) {
-        HashSet<Integer> hashSet=new HashSet<>();
-        for(int num:nums){
-            hashSet.add(num);
+        HashSet<Integer> num_set=new HashSet<>();
+        for(Integer num:nums){
+            num_set.add(num);
         }
-        int ansStrea=0;
-        for(int i=0;i<nums.length;i++){
-            if(!hashSet.contains(nums[i]-1)){
-                int streak=1;
-                int currentNum=nums[i];
-                while(hashSet.contains(currentNum+1)){
-                    currentNum++;
-                    streak++;
+        Integer longestStreak=0;
+        for(Integer num:nums){
+            if(!num_set.contains(num-1)){
+                Integer currentStreak=1;
+                Integer currentNum=num;
+                while(num_set.contains(currentNum+1)){
+                    currentStreak+=1;
+                    currentNum+=1;
                 }
-                ansStrea=Math.max(ansStrea,streak);
+                longestStreak=Math.max(longestStreak,currentStreak);
             }
         }
-        return ansStrea;
+        return longestStreak;
     }
 }

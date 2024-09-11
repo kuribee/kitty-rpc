@@ -11,6 +11,13 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>rpc-framework-core</module>
+        <module>rpc-server-spring-boot</module>
+        <module>rpc-server-spring-boot-starter</module>
+        <module>provider-api</module>
+        <module>provider</module>
+        <module>rpc-client-spring-boot</module>
+        <module>rpc-client-spring-boot-starter</module>
+        <module>consumer</module>
     </modules>
 
     <properties>
