@@ -69,7 +69,7 @@ public class NettyRpcClient implements RpcClient {
                         ch.pipeline().addLast(new RpcResponseHandler());
                     }
                 });
-        this.channelProvider = SingletonFactory.getInstance(ChannelProvider.class);
+        this.channelProvider = SingletonFactory.getInstance( ChannelProvider.class);
     }
 
     @SneakyThrows
